@@ -1,5 +1,7 @@
 package a.levchenko.codewar.math;
 
+import java.util.Arrays;
+
 public class ArraysKata {
 
     /**
@@ -43,7 +45,10 @@ public class ArraysKata {
      * Advanced users may find this extremely easy and can easily write this in one line.
      */
     public double sum(double[] numbers) {
-        return 0.0;
+
+        return Arrays.stream(numbers).sum();
+
+
     }
 
 
@@ -56,6 +61,12 @@ public class ArraysKata {
      * [1, 2, 3] --> [2, 4, 6]
      */
     public int[] map(int[] arr) {
+
+        //обьявляем массив арр1 точно такойже длині как арр
+        //создаем цикл и проходим по всем элементам арр
+        // каждій єлемент *2 и вставляю в нулевой цикл arr1
+        // return arr1
+
         return null;
     }
 
