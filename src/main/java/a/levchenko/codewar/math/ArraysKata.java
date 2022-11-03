@@ -1,6 +1,7 @@
 package a.levchenko.codewar.math;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class ArraysKata {
 
@@ -62,13 +63,30 @@ public class ArraysKata {
      */
     public int[] map(int[] arr) {
 
+
+
+                Scanner scanner = new Scanner(System.in);
+                int[] arr = new int[3];
+                for(int i = 0; i < arr.length;i++){
+                    System.out.println("Vvedite chislo: ");
+                    int arr1 = scanner.nextInt();
+                    arr[i] = arr1;
+                    arr[i] = arr1 * 2;
+                }
+                for(int i = 0; i < arr.length;i++){
+                    System.out.println(arr[i]);
+
+                }
+            }
+        }
+
         //обьявляем массив арр1 точно такойже длині как арр
         //создаем цикл и проходим по всем элементам арр
         // каждій єлемент *2 и вставляю в нулевой цикл arr1
         // return arr1
 
-        return null;
-    }
+
+
 
 
     /**
