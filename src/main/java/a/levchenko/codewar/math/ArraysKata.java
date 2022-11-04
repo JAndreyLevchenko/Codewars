@@ -62,30 +62,19 @@ public class ArraysKata {
      * [1, 2, 3] --> [2, 4, 6]
      */
     public int[] map(int[] arr) {
-
-
-
-                Scanner scanner = new Scanner(System.in);
-                int[] arr = new int[3];
-                for(int i = 0; i < arr.length;i++){
-                    System.out.println("Vvedite chislo: ");
-                    int arr1 = scanner.nextInt();
-                    arr[i] = arr1;
-                    arr[i] = arr1 * 2;
-                }
-                for(int i = 0; i < arr.length;i++){
-                    System.out.println(arr[i]);
-
-                }
-            }
+        Scanner scanner = new Scanner(System.in);
+        int[] arr1 = new int[3];
+        for (int i = 0; i <= arr.length; i++) {
+            System.out.println("Vvedite chislo: ");
+            int arr5= scanner.nextInt();
+            arr1[i] = arr5;
+            arr1[i] = arr5 * 2;
         }
-
-        //обьявляем массив арр1 точно такойже длині как арр
-        //создаем цикл и проходим по всем элементам арр
-        // каждій єлемент *2 и вставляю в нулевой цикл arr1
-        // return arr1
-
-
+        for (int i = 0; i <= arr.length; i++) {
+            System.out.println(arr1[i]);
+        }
+        return arr1;
+    }
 
 
 
@@ -125,7 +114,7 @@ public class ArraysKata {
 
 
     /**
-     *  @see <a href="https://www.codewars.com/kata/58f8a3a27a5c28d92e000144"></a>
+     * @see <a href="https://www.codewars.com/kata/58f8a3a27a5c28d92e000144"></a>
      * Your task is to find the first element of an array that is not consecutive.
      * <p>
      * By not consecutive we mean not exactly 1 larger than the previous element of the array.
@@ -141,7 +130,7 @@ public class ArraysKata {
      * Can you write a solution that will return null for both [] and [ x ] though?
      * (This is an empty array and one with a single number and is not tested for,
      * but you can write your own example test. )
-     * */
+     */
     public Integer firstNonConsecutiveNumber(final int[] array) {
         return null;
     }
@@ -159,7 +148,7 @@ public class ArraysKata {
      * <p>
      * array = [1, 2, 3, 4] and N = 2, then the result is 3^2 == 9;
      * array = [1, 2, 3] and N = 3, but N is outside of the array, so the result is -1.
-     * */
+     */
     public int nthPower(int[] array, int n) {
         return 0;
     }
