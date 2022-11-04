@@ -74,12 +74,12 @@ public class ArraysKata {
         }
     }
 
-    public int[] map(int[] masiv) {
+    public int[] map(int[] masiv) {                     //А вот тут как должна быть решена ката (во-первых тут метод уже на вход принимает масив ты его не вводишь за тебя это делает тест)
         for (int i = 0; i < masiv.length; i++) {
             int chisloIzMasiva= masiv[i];
             masiv[i] = chisloIzMasiva * 2;
         }
-        return masiv;
+        return masiv;                                   //во вторых ты возвращаешь масив в котором все числа умнжены на два
     }
 
     /**
