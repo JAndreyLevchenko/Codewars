@@ -121,7 +121,18 @@ public class ArraysKata {
      * For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
      */
     public int[] countPositivesSumNegatives(int[] input) {
-        return null; //return an array with count of positives and sum of negatives
+
+     if(input == null || input.length == 0) return new int[0];
+     int positive = 0, sumnegative = 0;
+        int i;
+        for(i = 0; i < input.length; i++){
+         if(input[i] > 0) positive++;
+         else sumnegative += input[i];
+
+     }
+
+
+        return new int[]{positive,sumnegative}; //return an array with count of positives and sum of negatives
     }
 
 
