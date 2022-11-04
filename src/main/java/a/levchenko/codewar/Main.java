@@ -2,18 +2,11 @@ package a.levchenko.codewar;
 
 import a.levchenko.codewar.math.ArraysKata;
 
-import java.util.Arrays;
-
 public class Main {
 
     public static void main(String[] args) {
-        ArraysKata kata = new ArraysKata();
-        int[] x = {1,2};
-        kata.map(x);
+        ArraysKata kata = new ArraysKata(); //Тут внутри метода мейн создался обьект `kata` типа ArraysKata
+        kata.map();                         //А тут у этого обьекта вызвал метод map
     }
-
-
-
-
 
 }

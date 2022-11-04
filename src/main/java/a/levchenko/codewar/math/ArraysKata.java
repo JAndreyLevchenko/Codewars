@@ -61,22 +61,26 @@ public class ArraysKata {
      * <p>
      * [1, 2, 3] --> [2, 4, 6]
      */
-    public int[] map(int[] arr) {
-        Scanner scanner = new Scanner(System.in);
-        int[] arr1 = new int[3];
-        for (int i = 0; i <= arr.length; i++) {
-            System.out.println("Vvedite chislo: ");
-            int arr5= scanner.nextInt();
-            arr1[i] = arr5;
-            arr1[i] = arr5 * 2;
+    public void map() {
+        Scanner scanner = new Scanner(System.in);       //Тут ты создал обьект типа сканер
+        int[] noviyMasiv = new int[3];                  //Тут ты создал масив и обьявил что длина этого масива 3 элемента
+        for (int i = 0; i <= noviyMasiv.length; i++) {  //Тут ты создал цыкл который будет выполнен 3 раза
+            System.out.println("Vvedite chislo: ");     //Тут ты выводишь на экран строку Vvedite chislo
+            int novoeChisloVmasiv= scanner.nextInt();   //Тут ты создаёшь новую переменную типа Int и присваиваешь ей значение, которое получаешь из сканера клавиатуры
+            noviyMasiv[i] = novoeChisloVmasiv * 2;      //Тут ты засовываешь в масив новое число умноженое на два
         }
-        for (int i = 0; i <= arr.length; i++) {
-            System.out.println(arr1[i]);
+        for (int i = 0; i <= noviyMasiv.length; i++) {
+            System.out.println(noviyMasiv[i]);          //Тут ты пробегаешь по масиву и выводишь все элементы
         }
-        return arr1;
     }
 
-
+    public int[] map(int[] masiv) {
+        for (int i = 0; i < masiv.length; i++) {
+            int chisloIzMasiva= masiv[i];
+            masiv[i] = chisloIzMasiva * 2;
+        }
+        return masiv;
+    }
 
     /**
      * @see <a href="https://www.codewars.com/kata/54edbc7200b811e956000556"></a>
