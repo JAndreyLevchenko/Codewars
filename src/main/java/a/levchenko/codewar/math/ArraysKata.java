@@ -98,8 +98,16 @@ public class ArraysKata {
      */
 
     public int countSheeps(Boolean[] arrayOfSheeps) {
-        return 0;
+        int a = 0;                                                  // для того чтоб потом вернуть кол.овечек после цикла
+        for(int i = 0; i < arrayOfSheeps.length; i++) {            // цикл с условием если массив овечек не 0 тобиш(true) и норм массив овечек(trut) тогда
+            if (arrayOfSheeps[i] != null && arrayOfSheeps[i]){  // cчитаем количество овечек(true) и выводим = a
+                a++;
+        }
     }
+        return a;
+    }
+
+
 
 
     /**
